@@ -1,0 +1,754 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafafa;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header and navigation */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #ecf0f1;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+header nav ul li a {
+    color: #ecf0f1;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #3498db;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x1080');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-image: url('../images/BEnergy-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Features section */
+.features {
+    padding: 4rem 0;
+    background-color: #ecf0f1;
+}
+
+.features h3 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: #2c3e50;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.feature-item {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.feature-item h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/* About section */
+.about {
+    padding: 4rem 0;
+}
+
+.about h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.about p {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+/* Contact section */
+.contact {
+    padding: 4rem 0;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+.contact h3 {
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.contact p {
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Page header */
+.page-header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.page-header h2 {
+    font-size: 2.2rem;
+}
+
+/* About content */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    padding: 4rem 0;
+}
+
+.about-text h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+}
+
+.about-text ul {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-text li {
+    margin-bottom: 0.5rem;
+}
+
+.about-image {
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+/* Services section */
+.services {
+    padding: 4rem 0;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+.service-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.service-item h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.service-item ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.service-item li {
+    margin-bottom: 0.5rem;
+}
+
+/* Services Tiers section */
+.services-tiers {
+    padding: 4rem 0;
+}
+
+.tier-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-tier {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 2rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-tier:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.service-tier h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.service-tier p {
+    margin-bottom: 1rem;
+}
+
+.service-tier ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.service-tier li {
+    margin-bottom: 0.5rem;
+}
+
+.service-tier .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+/* Advisory Areas Section */
+.advisory-areas {
+    padding: 4rem 0;
+    background-color: #ecf0f1;
+}
+
+.advisory-areas h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.advisory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.advisory-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.advisory-item h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/* SEAI Information Section */
+.seai-info {
+    padding: 4rem 0;
+}
+
+.seai-info h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.info-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 2rem;
+}
+
+.info-item h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.info-item p {
+    margin-bottom: 1rem;
+}
+
+.seai-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+.seai-info th,
+.seai-info td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.seai-info th {
+    background-color: #f2f2f2;
+    font-weight: 600;
+}
+
+.seai-info tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Why Do You Need a BER Cert? Section */
+.why-ber-cert {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.why-ber-cert h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.why-ber-cert p {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #555;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ber-reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.ber-reason {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ber-reason:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.ber-reason h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ber-reason h3::before {
+    content: "•";
+    color: #3498db;
+    font-size: 1.5rem;
+}
+
+.ber-reason p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* CTA section */
+.cta {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1920x1080');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-image: url('../images/BEnergy-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+.cta h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contact page styles */
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    padding: 4rem 0;
+}
+
+.contact-details h3,
+.contact-form h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.contact-details ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-details li {
+    margin-bottom: 0.8rem;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.form-message {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border-radius: 4px;
+    display: none;
+}
+
+.form-message.success {
+    background-color: #d5f5e3;
+    color: #27ae60;
+    border: 1px solid #27ae60;
+    display: block;
+}
+
+.form-message.error {
+    background-color: #fadbd8;
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+    display: block;
+}
+
+/* Map section */
+.map {
+    padding: 4rem 0;
+    background-color: #ecf0f1;
+}
+
+.map h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.map-placeholder {
+    background-color: #bdc3c7;
+    height: 300px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-links a {
+    color: #ecf0f1;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #3498db;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+    }
+    
+    .about-content,
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-image,
+    .map-placeholder {
+        margin-top: 2rem;
+    }
+    
+    .tier-grid,
+    .advisory-grid,
+    .info-grid,
+    .ber-reasons-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .services-tiers,
+    .advisory-areas,
+    .seai-info,
+    .why-ber-cert {
+        padding: 2rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .cta h2 {
+        font-size: 1.8rem;
+    }
+    
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-tier,
+    .advisory-item,
+    .info-item,
+    .ber-reason {
+        padding: 1.5rem;
+    }
+    
+    .services-tiers h2,
+    .advisory-areas h2,
+    .seai-info h2,
+    .why-ber-cert h2,
+    .page-header h2,
+    .about h3,
+    .contact h3,
+    .features h3,
+    .services h2,
+    .about-content h2,
+    .contact-info h2 {
+        font-size: 1.5rem;
+    }
+    
+    .cta h2 {
+        font-size: 1.8rem;
+    }
+}
+/* Logo styles */
+.logo {
+    max-height: 5rem;
+    height: auto;
+    display: inline-block;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
