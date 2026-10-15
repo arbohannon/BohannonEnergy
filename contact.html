@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Bohannon Energy - BER Assessor</title>
+    <meta name="description" content="Contact Aiden Bohannon for BER assessments for domestic dwellings, house sales, rentals, and SEAI grant applications.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/BEnergy-logo.png" alt="Bohannon Energy Logo" class="logo">
+            <h1>Bohannon Energy</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Contact Me</h2>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-details">
+                <h3>Get In Touch</h3>
+                <p>Have questions about BER assessments or need to schedule an assessment for your property? I'm here to help.</p>
+                <ul>
+                    <li><strong>Mobile:</strong> 086-1712413</li>
+                    <li><strong>Email:</strong> aiden.bohannon@gmail.com</li>
+            </div>
+            <div class="contact-form">
+                <h3>Send Me a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eircode">Eircode</label>
+                        <input type="text" id="eircode" name="eircode" placeholder="e.g. A65 F4E2" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dwelling">Dwelling Type Description</label>
+                        <textarea id="dwelling" name="dwelling" rows="3" placeholder="e.g. 3-bed semi-detached house, built 1995" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div id="formMessage" class="form-message"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional map section removed for privacy -->
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Bohannon Energy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

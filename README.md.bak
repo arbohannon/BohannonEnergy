@@ -1,0 +1,75 @@
+# Bohannon Energy - BER Assessment Website
+
+This is a static website for Bohannon Energy, providing BER (Building Energy Rating) assessments for domestic dwellings in Ireland.
+
+## Website Purpose
+
+The website promotes a sole trader BER assessment service required for:
+- House sales and rentals (legal requirement)
+- SEAI grant applications (many grants require a BER)
+- Homeowners seeking to understand their property's energy efficiency
+
+## Structure
+
+- `index.html` - Home page
+- `about.html` - About the assessor (Aiden Bohannon)
+- `services.html` - Details of BER assessment services
+- `contact.html` - Contact information and inquiry form
+- `css/styles.css` - Stylesheet
+- `js/main.js` - JavaScript for interactivity (contact form, active nav)
+- `images/` - Directory for images (currently empty)
+
+## Key Features
+
+- Responsive design (mobile, tablet, desktop)
+- Clean, professional presentation focused on BER services
+- Interactive contact form with validation
+- Active navigation highlighting
+- SEO-optimized meta tags
+- Accessible semantic markup
+
+## Technologies Used
+
+- HTML5
+- CSS3 (Flexbox and Grid)
+- Vanilla JavaScript (no frameworks)
+
+## Customization
+
+To adapt this website for your BER assessment business:
+
+1. Update text content in each HTML file to reflect your services and details
+2. Add your professional photo or logo in the `images/` directory
+3. Adjust colors in `css/styles.css` if desired (look for color values)
+4. Update your contact information in `contact.html`
+5. Review and adjust meta tags for improved SEO
+6. Consider adding testimonials or sample BER certificates (as images) if appropriate
+
+## Browser Support
+
+Compatible with all modern browsers:
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers (iOS Safari, Android Chrome)
+
+## Deployment
+
+As a static website, deploy to any static hosting service:
+- GitHub Pages
+- Netlify
+- Vercel
+- AWS S3
+- Firebase Hosting
+- Traditional web hosting
+
+Simply upload all files to the host's public directory.
+
+## Note on BER Assessments
+
+This website template is designed for BER assessors in Ireland. Ensure that you comply with all relevant regulations and maintain your registration with the Sustainable Energy Authority of Ireland (SEAI) when providing BER assessment services.
+
+## License
+
+This website template is free to use for both personal and commercial projects related to BER assessment services.
