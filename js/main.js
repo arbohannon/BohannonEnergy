@@ -32,11 +32,25 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
-            // Simulate form submission (in a real site, this would send to a server)
-            showFormMessage('Thank you for your message! We will get back to you soon.', 'success');
-            
-            // Reset form
-            contactForm.reset();
+            // Submit to Formspree
+            fetch('https://formspree.io/f/moejyele', {
+                method: 'POST',
+                body: new FormData(contactForm),
+                headers: { 'Accept': 'application/json' }
+            })
+            .then(response => {
+                if (response.ok) {
+                    showFormMessage('Thank you for your message! We will get back to you soon.', 'success');
+                    contactForm.reset();
+                } else {
+                    return response.json().then(data => {
+                        throw new Error(data.error || 'Sorry, something went wrong. Please try again later.');
+                    });
+                }
+            })
+            .catch(error => {
+                showFormMessage(error.message, 'error');
+            });
         });
     }
     
