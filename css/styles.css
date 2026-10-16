@@ -72,7 +72,7 @@ header nav ul li a.active {
 
 /* Hero section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x1080');
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 60%, #1e3c72 100%);
     background-size: cover;
     background-position: center;
     color: white;
@@ -134,13 +134,27 @@ header nav ul li a.active {
 /* Features section */
 .features {
     padding: 4rem 0;
-    background-color: #ecf0f1;
+    background: linear-gradient(135deg, #eef7ff 0%, #ffffff 100%);
 }
 
 .features h3 {
     text-align: center;
     margin-bottom: 2.5rem;
     color: #2c3e50;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+.features h3::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #3498db, #2ecc71);
+    border-radius: 2px;
 }
 
 .feature-grid {
@@ -153,19 +167,31 @@ header nav ul li a.active {
     background-color: white;
     padding: 2rem;
     border-radius: 8px;
+    border-top: 4px solid #3498db;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
 }
 
 .feature-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    border-top-color: #2980b9;
 }
 
 .feature-item h4 {
-    color: #2c3e50;
+    color: #1e3c72;
     margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.feature-item a {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+.feature-item a:hover {
+    color: #1f6fa3;
 }
 
 /* About section */
@@ -422,6 +448,55 @@ header nav ul li a.active {
 
 .seai-info tr:hover {
     background-color: #f5f5f5;
+}
+
+/* Moved grants table (SEAI Grants page) */
+.grant-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+.grant-table th,
+.grant-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.grant-table th {
+    background-color: #f2f2f2;
+    font-weight: 600;
+}
+
+.grant-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Content detail pages (BERs Explained, SEAI Grants): paragraph spacing + visible SEAI links */
+.ber-info p,
+.ber-info h3,
+.ber-info h4,
+.ber-info ul,
+.seai-grants p,
+.seai-grants h3,
+.seai-grants h4,
+.seai-grants ul {
+    margin-bottom: 1rem;
+}
+
+.ber-info li,
+.seai-grants li {
+    margin-bottom: 0.5rem;
+}
+
+.seai-link {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+.seai-link:hover {
+    color: #1f6fa3;
 }
 
 /* Why Do You Need a BER Cert? Section */
@@ -746,9 +821,10 @@ footer p {
 }
 /* Logo styles */
 .logo {
-    max-height: 5rem;
+    max-height: 7rem;
     height: auto;
     display: inline-block;
     margin-right: 1rem;
     vertical-align: middle;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3));
 }
