@@ -72,14 +72,34 @@ header nav ul li a.active {
 
 /* Hero section */
 .hero {
-    background: linear-gradient(135deg, #d62828 0%, #f77f50 40%, #fcbf49 75%, #90be6d 100%);
-    background-size: cover;
-    background-position: center;
+    background: #2f7bdb;
     color: white;
-    text-align: center;
     padding: 6rem 0;
     position: relative;
     overflow: hidden;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1 1 400px;
+}
+
+.hero-image {
+    flex: 1 1 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
 }
 
 .hero::before {
@@ -90,7 +110,7 @@ header nav ul li a.active {
     transform: translate(-50%, -50%);
     width: 80%;
     height: 80%;
-    background-image: url('../images/BEnergy-logo.png');
+    background-image: url('../images/HouseWithLogo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -134,7 +154,7 @@ header nav ul li a.active {
 /* Features section */
 .features {
     padding: 4rem 0;
-    background: linear-gradient(135deg, #fff3cd 0%, #ffffff 40%, #f0fff0 100%);
+    background: #f5f7fa;
 }
 
 .features h3 {
@@ -153,7 +173,7 @@ header nav ul li a.active {
     transform: translateX(-50%);
     width: 60px;
     height: 4px;
-    background: linear-gradient(90deg, #d62828, #fcbf49, #90be6d);
+    background: #2f7bdb;
     border-radius: 2px;
 }
 
@@ -167,7 +187,7 @@ header nav ul li a.active {
     background-color: white;
     padding: 2rem;
     border-radius: 8px;
-    border-top: 4px solid #fcbf49;
+    border-top: 4px solid #2f7bdb;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
@@ -176,7 +196,7 @@ header nav ul li a.active {
 .feature-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-    border-top-color: #d62828;
+    border-top-color: #1f6bc1;
 }
 
 .feature-item h4 {
