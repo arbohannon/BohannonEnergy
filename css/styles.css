@@ -72,7 +72,7 @@ header nav ul li a.active {
 
 /* Hero section */
 .hero {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 60%, #1e3c72 100%);
+    background: linear-gradient(135deg, #d62828 0%, #f77f50 40%, #fcbf49 75%, #90be6d 100%);
     background-size: cover;
     background-position: center;
     color: white;
@@ -134,7 +134,7 @@ header nav ul li a.active {
 /* Features section */
 .features {
     padding: 4rem 0;
-    background: linear-gradient(135deg, #eef7ff 0%, #ffffff 100%);
+    background: linear-gradient(135deg, #fff3cd 0%, #ffffff 40%, #f0fff0 100%);
 }
 
 .features h3 {
@@ -153,7 +153,7 @@ header nav ul li a.active {
     transform: translateX(-50%);
     width: 60px;
     height: 4px;
-    background: linear-gradient(90deg, #3498db, #2ecc71);
+    background: linear-gradient(90deg, #d62828, #fcbf49, #90be6d);
     border-radius: 2px;
 }
 
@@ -167,7 +167,7 @@ header nav ul li a.active {
     background-color: white;
     padding: 2rem;
     border-radius: 8px;
-    border-top: 4px solid #3498db;
+    border-top: 4px solid #fcbf49;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
@@ -176,7 +176,7 @@ header nav ul li a.active {
 .feature-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-    border-top-color: #2980b9;
+    border-top-color: #d62828;
 }
 
 .feature-item h4 {
@@ -821,10 +821,10 @@ footer p {
 }
 /* Logo styles */
 .logo {
-    max-height: 7rem;
+    max-height: 9rem;
     height: auto;
     display: inline-block;
     margin-right: 1rem;
     vertical-align: middle;
-    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.4));
 }

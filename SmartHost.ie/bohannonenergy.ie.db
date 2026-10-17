@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<title>Sign in through your client area · SmartHost Managed DNS</title>
+<link rel="icon" type="image/png" href="/assets/brand/favicon.png">
+<link rel="apple-touch-icon" href="/assets/brand/favicon.png">
+<link rel="stylesheet" href="/assets/app.css?v=1791203547">
+<link rel="stylesheet" href="/assets/tool-footer.css?v=20261005-1">
+<script src="/assets/app.js?v=1789715764" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="https://smarthost.ie/" aria-label="SmartHost home">
+      <img class="brand-logo" src="/assets/brand/smarthost-logo-colour.svg" alt="SmartHost" width="180" height="34">
+      <span class="brand-product">Managed DNS</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+              <a href="https://smarthost.ie/">Home</a>
+        <a href="https://support.smarthost.ie/">Support</a>
+        <a class="client-area" href="https://portal.smarthost.ie/clientarea.php">Client area</a>
+          </nav>
+  </div>
+</header>
+<main id="main" class="wrap">
+<div class="error card signin">
+    <h1>Sign in through your client area</h1>
+  <p>Sign in to your SmartHost client area and open Domains, then Managed DNS. You will be brought straight back here.</p>
+    <p class="error-actions">
+          <a class="btn" href="https://portal.smarthost.ie/clientarea.php?action=domains" rel="nofollow noopener">Open your client area</a>
+              <a class="btn btn-ghost" href="https://support.smarthost.ie/">Get support</a>
+      </p>
+  </div>
+</main>
+<footer class="sh-tools-footer">
+  <div class="sh-footer-wrap">
+    <div class="sh-footer-grid">
+      <div class="sh-footer-brand">
+        <a href="https://smarthost.ie/" aria-label="SmartHost home"><img src="/assets/brand/smarthost-logo-white.png" alt="SmartHost" width="153" height="32"></a>
+        <p>Helpful tools from SmartHost.<br>Irish hosting. Friendly support.</p>
+      </div>
+      <nav class="sh-footer-tools" aria-label="SmartHost tools">
+        <h2>Our tools</h2>
+        <a href="https://safepw.smarthost.ie/">SafePW</a>
+        <a href="https://ip.smarthost.ie/">IP Address</a>
+        <a href="https://dns.smarthost.ie/">Managed DNS</a>
+      </nav>
+      <div class="sh-footer-contact">
+        <h2>Contact SmartHost</h2>
+        <a href="https://support.smarthost.ie/">Get support</a>
+        <a href="tel:+35319019700">01 901 9700</a>
+        <a href="mailto:support@smarthost.ie">support@smarthost.ie</a>
+        <p>Maynooth Business Campus,<br>Co. Kildare, Ireland.</p>
+      </div>
+    </div>
+    <div class="sh-footer-bottom">
+      <p>© 2026 SmartHost Web Services Limited.</p>
+      <nav aria-label="Legal and company links">
+        <a href="https://smarthost.ie/">SmartHost home</a>
+        <a href="https://smarthost.ie/vps/">Cloud VPS</a>
+        <a href="https://smarthost.ie/privacy-policy/#privacy">Privacy</a>
+        <a href="https://smarthost.ie/privacy-policy/#terms">Terms</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
