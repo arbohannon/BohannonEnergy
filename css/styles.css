@@ -97,25 +97,19 @@ header nav ul li a.active {
     justify-content: center;
 }
 
-.hero-image img {
+.hero-image.full {
+    flex: 1 1 100%;
+    width: 100%;
+}
+
+.hero-image.full img {
+    width: 100%;
     max-width: 100%;
     height: auto;
 }
 
 .hero::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 80%;
-    background-image: url('../images/HouseWithLogo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.05;
-    pointer-events: none;
+    content: none;
 }
 
 .hero h2 {
@@ -598,7 +592,7 @@ header nav ul li a.active {
     transform: translate(-50%, -50%);
     width: 80%;
     height: 80%;
-    background-image: url('../images/BEnergy-logo.png');
+    background-image: url('../images/BohannonEnergyLogo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
